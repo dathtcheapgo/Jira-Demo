@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CGBookingNavigationBar" customModule="Rider" customModuleProvider="target">
+            <connections>
+                <outlet property="imgLeft" destination="kSq-LZ-2hL" id="sqF-dM-7h5"/>
+                <outlet property="imgRight" destination="Brm-Zf-gLl" id="tSc-WW-4IB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="vG1-Ea-uZg"/>
+                <outlet property="viewWrapTitle" destination="mnb-7n-4ZZ" id="VQr-YS-0xA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HBorderView" customModule="Rider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-3O-H1b" userLabel="StatusSpace">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="tRF-m0-ddn"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kSq-LZ-2hL" userLabel="LeftImage">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kSq-LZ-2hL" secondAttribute="height" multiplier="1:1" id="ETy-tk-uia"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-ca-sQC" userLabel="LeftButton"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_gift" translatesAutoresizingMaskIntoConstraints="NO" id="Brm-Zf-gLl" userLabel="RightImage">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Brm-Zf-gLl" secondAttribute="height" multiplier="1:1" id="ndG-LV-CUq"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUf-8H-3ax" userLabel="RightButton"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnb-7n-4ZZ" userLabel="viewWrapTitle" customClass="HBorderView" customModule="Rider" customModuleProvider="target">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1450980392" green="0.75686274509999996" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="LFA-ca-sQC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Mn-MJ-pqa"/>
+                <constraint firstAttribute="trailing" secondItem="tqb-3O-H1b" secondAttribute="trailing" id="30m-aV-Hhd"/>
+                <constraint firstItem="kSq-LZ-2hL" firstAttribute="bottom" secondItem="mnb-7n-4ZZ" secondAttribute="bottom" id="36u-Tv-znm"/>
+                <constraint firstAttribute="bottom" secondItem="LFA-ca-sQC" secondAttribute="bottom" id="3hY-2l-pZ9"/>
+                <constraint firstItem="tqb-3O-H1b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5b2-eU-TcH"/>
+                <constraint firstAttribute="bottom" secondItem="pUf-8H-3ax" secondAttribute="bottom" id="AK2-Fi-DmW"/>
+                <constraint firstItem="pUf-8H-3ax" firstAttribute="leading" secondItem="mnb-7n-4ZZ" secondAttribute="trailing" id="DHo-FU-rmU"/>
+                <constraint firstItem="Brm-Zf-gLl" firstAttribute="height" secondItem="kSq-LZ-2hL" secondAttribute="height" multiplier="45:50" id="FZj-HR-UWt"/>
+                <constraint firstItem="mnb-7n-4ZZ" firstAttribute="leading" secondItem="LFA-ca-sQC" secondAttribute="trailing" id="K20-Ql-BSh"/>
+                <constraint firstItem="Brm-Zf-gLl" firstAttribute="top" secondItem="kSq-LZ-2hL" secondAttribute="top" id="LuQ-Q0-VzM"/>
+                <constraint firstAttribute="trailing" secondItem="pUf-8H-3ax" secondAttribute="trailing" id="Tsx-jo-fnc"/>
+                <constraint firstAttribute="trailing" secondItem="Brm-Zf-gLl" secondAttribute="trailing" constant="8" id="Ty6-Qd-inh"/>
+                <constraint firstItem="pUf-8H-3ax" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="br4-LT-bbf"/>
+                <constraint firstItem="mnb-7n-4ZZ" firstAttribute="leading" secondItem="kSq-LZ-2hL" secondAttribute="trailing" constant="8" id="eBh-f9-zsX"/>
+                <constraint firstItem="LFA-ca-sQC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hdC-X6-OaT"/>
+                <constraint firstItem="mnb-7n-4ZZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="38:85" id="ido-ed-3SD"/>
+                <constraint firstItem="tqb-3O-H1b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nHP-dl-sFG"/>
+                <constraint firstItem="mnb-7n-4ZZ" firstAttribute="top" secondItem="tqb-3O-H1b" secondAttribute="bottom" id="qXZ-9R-oIe"/>
+                <constraint firstItem="Brm-Zf-gLl" firstAttribute="leading" secondItem="mnb-7n-4ZZ" secondAttribute="trailing" constant="8" id="r6C-qd-fA9"/>
+                <constraint firstItem="kSq-LZ-2hL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="u0L-c0-bio"/>
+                <constraint firstItem="kSq-LZ-2hL" firstAttribute="top" secondItem="tqb-3O-H1b" secondAttribute="bottom" id="vFj-m1-TIf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="gradientRightColor">
+                    <color key="value" red="0.22745098039215686" green="0.4823529411764706" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="gradientLeftColor">
+                    <color key="value" red="0.0" green="0.82352941176470584" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="27" y="-231.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="267" height="268"/>
+        <image name="ic_gift" width="45" height="45"/>
+    </resources>
+</document>

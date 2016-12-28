@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlideMenu" customModule="Rider" customModuleProvider="target">
+            <connections>
+                <outlet property="FreeRidesView" destination="fko-gO-1iK" id="92m-YY-dV5"/>
+                <outlet property="HelpView" destination="KlZ-pU-zvY" id="u4R-L7-f01"/>
+                <outlet property="PaymentView" destination="ClZ-RN-RwE" id="aZi-fh-W0t"/>
+                <outlet property="RidesHistoryView" destination="GTo-Wk-0td" id="bDR-5Q-oNS"/>
+                <outlet property="SettingsView" destination="WNf-6H-64O" id="Fc3-Un-VDX"/>
+                <outlet property="signUpToDriveView" destination="7CU-Bi-CAi" id="zjC-Me-Els"/>
+                <outlet property="view" destination="6Po-yN-cNp" id="ex3-Xc-TWv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6Po-yN-cNp">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="451"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineBlueBold" translatesAutoresizingMaskIntoConstraints="NO" id="M7a-zt-8TK">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GnD-SC-nLW"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fko-gO-1iK">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_gift" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-kA-Dbo">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="a1z-kA-Dbo" secondAttribute="height" multiplier="1:1" id="k3P-9V-ILg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free rides" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvB-N6-hMs">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fko-gO-1iK" secondAttribute="height" multiplier="293:74" id="bQA-Y1-50M"/>
+                        <constraint firstItem="a1z-kA-Dbo" firstAttribute="leading" secondItem="fko-gO-1iK" secondAttribute="leading" constant="26" id="gde-5x-rgO"/>
+                        <constraint firstItem="a1z-kA-Dbo" firstAttribute="centerY" secondItem="fko-gO-1iK" secondAttribute="centerY" id="iTc-rP-wpM"/>
+                        <constraint firstItem="zvB-N6-hMs" firstAttribute="centerY" secondItem="a1z-kA-Dbo" secondAttribute="centerY" id="kAw-aH-23v"/>
+                        <constraint firstItem="zvB-N6-hMs" firstAttribute="leading" secondItem="a1z-kA-Dbo" secondAttribute="trailing" constant="8" id="wUe-MM-bM4"/>
+                        <constraint firstItem="a1z-kA-Dbo" firstAttribute="width" secondItem="fko-gO-1iK" secondAttribute="width" multiplier="39:587" id="y82-ts-h46"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineBlueBold" translatesAutoresizingMaskIntoConstraints="NO" id="ELc-gL-ZDy">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="L5z-TQ-eEW"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTo-Wk-0td">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_inbox" translatesAutoresizingMaskIntoConstraints="NO" id="P4y-VU-wiR">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="P4y-VU-wiR" secondAttribute="height" multiplier="1:1" id="VOg-aa-amL"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rides History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7W-D1-1xr">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="D7W-D1-1xr" firstAttribute="leading" secondItem="P4y-VU-wiR" secondAttribute="trailing" constant="8" id="31w-ra-3NV"/>
+                        <constraint firstItem="D7W-D1-1xr" firstAttribute="centerY" secondItem="P4y-VU-wiR" secondAttribute="centerY" id="8aH-30-oI8"/>
+                        <constraint firstItem="P4y-VU-wiR" firstAttribute="leading" secondItem="GTo-Wk-0td" secondAttribute="leading" constant="26" id="DLZ-ma-0pX"/>
+                        <constraint firstItem="P4y-VU-wiR" firstAttribute="width" secondItem="GTo-Wk-0td" secondAttribute="width" multiplier="40:587" id="EMb-Yx-T6S"/>
+                        <constraint firstItem="P4y-VU-wiR" firstAttribute="centerY" secondItem="GTo-Wk-0td" secondAttribute="centerY" id="jWR-pa-tcH"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineBlueBold" translatesAutoresizingMaskIntoConstraints="NO" id="fHL-iz-V6G">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="JU6-2Y-qYE"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClZ-RN-RwE">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_creditcard" translatesAutoresizingMaskIntoConstraints="NO" id="Uud-np-ad8">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Uud-np-ad8" secondAttribute="height" multiplier="40:25" id="JUc-UJ-DJg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqF-FH-97z">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Uud-np-ad8" firstAttribute="width" secondItem="ClZ-RN-RwE" secondAttribute="width" multiplier="40:587" id="7I1-Ts-weT"/>
+                        <constraint firstItem="Uud-np-ad8" firstAttribute="leading" secondItem="ClZ-RN-RwE" secondAttribute="leading" constant="26" id="Dz2-sY-agm"/>
+                        <constraint firstItem="nqF-FH-97z" firstAttribute="leading" secondItem="Uud-np-ad8" secondAttribute="trailing" constant="8" id="NDE-z8-U6n"/>
+                        <constraint firstItem="Uud-np-ad8" firstAttribute="centerY" secondItem="ClZ-RN-RwE" secondAttribute="centerY" id="XVX-Nc-CZ8"/>
+                        <constraint firstItem="nqF-FH-97z" firstAttribute="centerY" secondItem="Uud-np-ad8" secondAttribute="centerY" id="bSd-si-cuG"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineBlueBold" translatesAutoresizingMaskIntoConstraints="NO" id="PcS-0s-brh">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bPc-0V-b3B"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlZ-pU-zvY">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_shield" translatesAutoresizingMaskIntoConstraints="NO" id="63t-tN-TNZ">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="63t-tN-TNZ" secondAttribute="height" multiplier="34:39" id="hjz-tf-AAa"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="635-wW-S4y">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="63t-tN-TNZ" firstAttribute="centerY" secondItem="KlZ-pU-zvY" secondAttribute="centerY" id="9P2-lA-OhG"/>
+                        <constraint firstItem="635-wW-S4y" firstAttribute="leading" secondItem="63t-tN-TNZ" secondAttribute="trailing" constant="8" id="IkC-NC-DnV"/>
+                        <constraint firstItem="63t-tN-TNZ" firstAttribute="leading" secondItem="KlZ-pU-zvY" secondAttribute="leading" constant="26" id="VVA-Xl-oFV"/>
+                        <constraint firstItem="635-wW-S4y" firstAttribute="centerY" secondItem="63t-tN-TNZ" secondAttribute="centerY" id="Zzi-xt-Cox"/>
+                        <constraint firstItem="63t-tN-TNZ" firstAttribute="width" secondItem="KlZ-pU-zvY" secondAttribute="width" multiplier="34:587" id="fFb-4z-RUf"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineBlueBold" translatesAutoresizingMaskIntoConstraints="NO" id="NkF-Li-Zrx">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="HK0-eS-GzN"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-6H-64O">
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_steering" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-mb-un2">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="9pN-mb-un2" secondAttribute="height" multiplier="1:1" id="xEH-qs-V8R"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to drive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2O-si-qIP">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.29821275684931509" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="D2O-si-qIP" firstAttribute="leading" secondItem="9pN-mb-un2" secondAttribute="trailing" constant="8" id="2oi-vy-MFf"/>
+                        <constraint firstItem="9pN-mb-un2" firstAttribute="centerY" secondItem="WNf-6H-64O" secondAttribute="centerY" id="6h1-mY-xi0"/>
+                        <constraint firstItem="D2O-si-qIP" firstAttribute="centerY" secondItem="9pN-mb-un2" secondAttribute="centerY" id="g7v-rY-45B"/>
+                        <constraint firstItem="9pN-mb-un2" firstAttribute="leading" secondItem="WNf-6H-64O" secondAttribute="leading" constant="20" id="kpN-hK-wwA"/>
+                        <constraint firstItem="9pN-mb-un2" firstAttribute="height" secondItem="WNf-6H-64O" secondAttribute="height" multiplier="41:80" id="yHV-Up-9zv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CU-Bi-CAi">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_settings" translatesAutoresizingMaskIntoConstraints="NO" id="QnC-lC-oX6">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="QnC-lC-oX6" secondAttribute="height" multiplier="1:1" id="g0r-oF-IW0"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cg-Xi-II0">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="QnC-lC-oX6" firstAttribute="leading" secondItem="7CU-Bi-CAi" secondAttribute="leading" constant="26" id="L9L-Ud-htZ"/>
+                        <constraint firstItem="6Cg-Xi-II0" firstAttribute="leading" secondItem="QnC-lC-oX6" secondAttribute="trailing" constant="8" id="SWO-GJ-IPB"/>
+                        <constraint firstItem="QnC-lC-oX6" firstAttribute="width" secondItem="7CU-Bi-CAi" secondAttribute="width" multiplier="40:587" id="TjH-e5-GiM"/>
+                        <constraint firstItem="6Cg-Xi-II0" firstAttribute="centerY" secondItem="QnC-lC-oX6" secondAttribute="centerY" id="UXc-7N-JdM"/>
+                        <constraint firstItem="QnC-lC-oX6" firstAttribute="centerY" secondItem="7CU-Bi-CAi" secondAttribute="centerY" id="vIF-ra-PTE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="PcS-0s-brh" firstAttribute="top" secondItem="ClZ-RN-RwE" secondAttribute="bottom" id="1u5-Sy-dNk"/>
+                <constraint firstItem="M7a-zt-8TK" firstAttribute="top" secondItem="6Po-yN-cNp" secondAttribute="top" id="2ka-pI-DVy"/>
+                <constraint firstAttribute="trailing" secondItem="PcS-0s-brh" secondAttribute="trailing" constant="30" id="2nQ-Dx-O4O"/>
+                <constraint firstItem="7CU-Bi-CAi" firstAttribute="width" secondItem="fko-gO-1iK" secondAttribute="width" id="766-Op-3Al"/>
+                <constraint firstItem="fko-gO-1iK" firstAttribute="width" secondItem="6Po-yN-cNp" secondAttribute="width" id="7fP-Te-Yic"/>
+                <constraint firstItem="fHL-iz-V6G" firstAttribute="leading" secondItem="6Po-yN-cNp" secondAttribute="leading" constant="30" id="8BR-Fk-EYt"/>
+                <constraint firstItem="NkF-Li-Zrx" firstAttribute="top" secondItem="KlZ-pU-zvY" secondAttribute="bottom" id="BXD-vq-fSU"/>
+                <constraint firstItem="ELc-gL-ZDy" firstAttribute="leading" secondItem="6Po-yN-cNp" secondAttribute="leading" constant="30" id="BZ5-rF-3xm"/>
+                <constraint firstItem="7CU-Bi-CAi" firstAttribute="top" secondItem="NkF-Li-Zrx" secondAttribute="bottom" id="EwA-4G-NuD"/>
+                <constraint firstItem="fko-gO-1iK" firstAttribute="top" secondItem="M7a-zt-8TK" secondAttribute="bottom" id="FW9-Ro-WnQ"/>
+                <constraint firstItem="WNf-6H-64O" firstAttribute="leading" secondItem="6Po-yN-cNp" secondAttribute="leading" constant="5" id="Fic-fN-xwY"/>
+                <constraint firstItem="KlZ-pU-zvY" firstAttribute="width" secondItem="fko-gO-1iK" secondAttribute="width" id="Gju-cK-2r1"/>
+                <constraint firstItem="KlZ-pU-zvY" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="J6Q-3Y-vLr"/>
+                <constraint firstAttribute="bottom" secondItem="WNf-6H-64O" secondAttribute="bottom" constant="12" id="Kq8-n6-KO2"/>
+                <constraint firstItem="GTo-Wk-0td" firstAttribute="top" secondItem="ELc-gL-ZDy" secondAttribute="bottom" id="L1o-Lo-jcI"/>
+                <constraint firstItem="ELc-gL-ZDy" firstAttribute="height" secondItem="M7a-zt-8TK" secondAttribute="height" id="MJM-fX-Meg"/>
+                <constraint firstItem="GTo-Wk-0td" firstAttribute="height" secondItem="fko-gO-1iK" secondAttribute="height" id="MJr-JA-nKH"/>
+                <constraint firstItem="NkF-Li-Zrx" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="MKJ-Lh-97v"/>
+                <constraint firstItem="KlZ-pU-zvY" firstAttribute="top" secondItem="PcS-0s-brh" secondAttribute="bottom" id="O6N-lS-Aw9"/>
+                <constraint firstItem="ELc-gL-ZDy" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="Oge-2k-vkz"/>
+                <constraint firstItem="7CU-Bi-CAi" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="QJT-AQ-UrL"/>
+                <constraint firstItem="ClZ-RN-RwE" firstAttribute="width" secondItem="fko-gO-1iK" secondAttribute="width" id="WBG-JW-HkQ"/>
+                <constraint firstItem="ClZ-RN-RwE" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="Wu0-CR-sKc"/>
+                <constraint firstItem="WNf-6H-64O" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="XcS-mM-qwI"/>
+                <constraint firstItem="NkF-Li-Zrx" firstAttribute="leading" secondItem="6Po-yN-cNp" secondAttribute="leading" constant="30" id="ZPq-GX-uZb"/>
+                <constraint firstItem="PcS-0s-brh" firstAttribute="leading" secondItem="6Po-yN-cNp" secondAttribute="leading" constant="30" id="adg-MJ-T4c"/>
+                <constraint firstItem="GTo-Wk-0td" firstAttribute="width" secondItem="fko-gO-1iK" secondAttribute="width" id="bac-5K-Sya"/>
+                <constraint firstItem="7CU-Bi-CAi" firstAttribute="height" secondItem="fko-gO-1iK" secondAttribute="height" id="br8-fp-3Vc"/>
+                <constraint firstItem="KlZ-pU-zvY" firstAttribute="height" secondItem="fko-gO-1iK" secondAttribute="height" id="byx-qq-sWJ"/>
+                <constraint firstItem="WNf-6H-64O" firstAttribute="height" secondItem="6Po-yN-cNp" secondAttribute="height" multiplier="80:885" id="c4K-AP-9bE"/>
+                <constraint firstAttribute="trailing" secondItem="M7a-zt-8TK" secondAttribute="trailing" constant="30" id="ewH-BA-v05"/>
+                <constraint firstItem="fHL-iz-V6G" firstAttribute="top" secondItem="GTo-Wk-0td" secondAttribute="bottom" id="f6g-9g-bBy"/>
+                <constraint firstItem="ClZ-RN-RwE" firstAttribute="top" secondItem="fHL-iz-V6G" secondAttribute="bottom" id="hB4-SG-kYq"/>
+                <constraint firstItem="ELc-gL-ZDy" firstAttribute="top" secondItem="fko-gO-1iK" secondAttribute="bottom" id="ial-8I-jNS"/>
+                <constraint firstAttribute="trailing" secondItem="ELc-gL-ZDy" secondAttribute="trailing" constant="30" id="ijx-Li-BC7"/>
+                <constraint firstAttribute="trailing" secondItem="NkF-Li-Zrx" secondAttribute="trailing" constant="30" id="l4C-pJ-eOE"/>
+                <constraint firstItem="GTo-Wk-0td" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="lVD-D6-hpz"/>
+                <constraint firstItem="M7a-zt-8TK" firstAttribute="leading" secondItem="6Po-yN-cNp" secondAttribute="leading" constant="30" id="mK8-mU-U0a"/>
+                <constraint firstItem="M7a-zt-8TK" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="o3z-30-xI8"/>
+                <constraint firstItem="fHL-iz-V6G" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="ok3-ak-0JM"/>
+                <constraint firstAttribute="trailing" secondItem="fHL-iz-V6G" secondAttribute="trailing" constant="30" id="uUm-wD-ww3"/>
+                <constraint firstItem="ClZ-RN-RwE" firstAttribute="height" secondItem="fko-gO-1iK" secondAttribute="height" id="w6i-pT-i4I"/>
+                <constraint firstItem="PcS-0s-brh" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="wIJ-JP-rSr"/>
+                <constraint firstItem="fko-gO-1iK" firstAttribute="centerX" secondItem="6Po-yN-cNp" secondAttribute="centerX" id="wvH-vO-LCF"/>
+                <constraint firstAttribute="trailing" secondItem="WNf-6H-64O" secondAttribute="trailing" constant="5" id="z3E-wd-AXv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="-6.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_creditcard" width="40" height="26"/>
+        <image name="ic_gift" width="39" height="39"/>
+        <image name="ic_inbox" width="36" height="28"/>
+        <image name="ic_settings" width="40" height="40"/>
+        <image name="ic_shield" width="34" height="39"/>
+        <image name="ic_steering" width="50" height="50"/>
+        <image name="lineBlueBold" width="54" height="4"/>
+    </resources>
+</document>

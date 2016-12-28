@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApiURL</key>
+	<string>http://node.cheapgo.com:5050/</string>
+	<key>SocketURL</key>
+	<string>http://node.cheapgo.com:5050</string>
+	<key>GoogleMap</key>
+	<dict>
+		<key>GoogleMapAPI-Key</key>
+		<string>AIzaSyDnWTZo3ae8idlAbGWQWccygSJGy4CbwYQ</string>
+		<key>GoolgeMap-BundleId</key>
+		<string>com.cheapgo.ri</string>
+		<key>GoolgeMap-Key</key>
+		<string>AIzaSyA5CBNIzpdIJiqDjAooghPi4sn57Y2jOI8</string>
+	</dict>
+	<key>UserInterface</key>
+	<dict>
+		<key>animateDuration</key>
+		<real>0.5</real>
+	</dict>
+</dict>
+</plist>
